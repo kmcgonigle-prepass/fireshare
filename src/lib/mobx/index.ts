@@ -1,2 +1,2 @@
-export * from './view-model';
-export * from './mobx'
+export * from "./mobx";
+export * from "./view-model";

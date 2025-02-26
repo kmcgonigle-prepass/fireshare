@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
-import { observer } from "mobx-react-lite";
 import { Separator } from "@/components/ui";
-import { ModeToggle } from "./mode-toggle";
+import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
+import { observer } from "mobx-react-lite";
+import { ModeToggle } from "./mode-toggle";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface TopBarProps extends React.ComponentPropsWithRef<"header"> {}

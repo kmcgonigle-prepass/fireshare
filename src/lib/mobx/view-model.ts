@@ -44,7 +44,7 @@ export abstract class BaseViewModel<
 
 export function useViewModel<TProps>(
   vmFactory: (props: TProps) => ViewModel<TProps>,
-  props: TProps,
+  props: TProps
 ) {
   const [vm] = useState(() => vmFactory(props));
 
@@ -85,7 +85,7 @@ export function useViewModelConstructor<
 >(vmConstructor: new (props: Record<string, never>) => R): R;
 export function useViewModelConstructor<TProps, R extends ViewModel<TProps>>(
   vmConstructor: new (props: TProps) => R,
-  props: TProps,
+  props: TProps
 ): R;
 export function useViewModelConstructor<
   TProps,
